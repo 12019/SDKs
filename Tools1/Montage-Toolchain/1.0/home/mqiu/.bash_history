@@ -1,0 +1,11 @@
+mips-elf-gcc
+exit
+make
+exit
+mips-elf-gcc
+make
+sed
+exit
+mips-elf-gcc
+make
+exit
