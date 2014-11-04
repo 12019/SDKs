@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='dropins metadata repo: file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/dropins/eclipse/' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1359131114518'/>
+  </properties>
+  <units size='2'>
+    <unit id='com.montage_tech.arthas.application' version='1.0.0.qualifier'>
+      <update id='com.montage_tech.arthas.application' range='[0.0.0,1.0.0.qualifier)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Toolchain'/>
+        <property name='org.eclipse.equinox.p2.provider' value='MONTAGE_TECH'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\dropins\eclipse\plugins\com.montage-tech.arthas.application'/>
+        <property name='file.lastModified' value='1358499931522'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.montage_tech.arthas.application' version='1.0.0.qualifier'/>
+        <provided namespace='osgi.bundle' name='com.montage_tech.arthas.application' version='1.0.0.qualifier'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.contenttype' range='3.4.100'/>
+        <required namespace='osgi.bundle' name='org.eclipse.cdt.managedbuilder.core' range='7.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.montage_tech.arthas.application' version='1.0.0.qualifier'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-Name: Toolchain&#xA;Bundle-Version: 1.0.0.qualifier&#xA;Require-Bundle: org.eclipse.core.contenttype;bundle-version=&quot;3.4.100&quot;,org.eclipse.cdt.managedbuilder.core;bundle-version=&quot;7.0.0&quot;&#xA;Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Bundle-ClassPath: com.montage-tech.arthas.toolchain&#xA;Bundle-SymbolicName: com.montage_tech.arthas.application;singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: MONTAGE_TECH&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='com.montage-tech.arthas.library' version='1.0.0.qualifier'>
+      <update id='com.montage-tech.arthas.library' range='[0.0.0,1.0.0.qualifier)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Library'/>
+        <property name='org.eclipse.equinox.p2.provider' value='MONTAGE_TECH'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\dropins\eclipse\plugins\com.montage-tech.arthas.library'/>
+        <property name='file.lastModified' value='1358499931537'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='com.montage-tech.arthas.library' version='1.0.0.qualifier'/>
+        <provided namespace='osgi.bundle' name='com.montage-tech.arthas.library' version='1.0.0.qualifier'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.cdt.managedbuilder.core' range='7.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.contenttype' range='3.4.100'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='com.montage-tech.arthas.library' version='1.0.0.qualifier'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-Vendor: MONTAGE_TECH&#xA;Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Bundle-SymbolicName: com.montage-tech.arthas.library;singleton=true&#xA;Require-Bundle: org.eclipse.cdt.managedbuilder.core;bundle-version=&quot;7.0.0&quot;,org.eclipse.core.contenttype;bundle-version=&quot;3.4.100&quot;&#xA;Bundle-Name: Library&#xA;Bundle-Version: 1.0.0.qualifier&#xA;
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+  </units>
+</repository>

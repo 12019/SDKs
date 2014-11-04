@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\.eclipseextension' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1359131116734'/>
+    <property name='org.eclipse.update.site.policy' value='USER-EXCLUDE'/>
+    <property name='org.eclipse.update.site.list' value=''/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='34'>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.managedbuilder.gnu.ui' version='7.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='47871'/>
+        <property name='download.size' value='47871'/>
+        <property name='download.md5' value='560bbd67fbfcb94fe517dbe59fc98e8e'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.managedbuilder.gnu.ui_7.0.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.managedbuilder.gnu.ui_7.0.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.managedbuilder.core' version='7.0.1.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='1153683'/>
+        <property name='download.size' value='1153683'/>
+        <property name='download.md5' value='f9d8698ef31402f1674fbd6dd59f85de'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.managedbuilder.core_7.0.1.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.managedbuilder.core_7.0.1.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.debug.ui.memory.traditional' version='1.2.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='129408'/>
+        <property name='download.size' value='129408'/>
+        <property name='download.md5' value='1a00b6b6bb17e2353d14210419468843'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.debug.ui.memory.traditional_1.2.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.debug.ui.memory.traditional_1.2.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.cdt.debug.ui.memory' version='2.1.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/features/org.eclipse.cdt.debug.ui.memory_2.1.0.201009170611/'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\features\org.eclipse.cdt.debug.ui.memory_2.1.0.201009170611'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.core.win32' version='5.2.0.201009170611'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.core.win32_5.2.0.201009170611/'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.core.win32_5.2.0.201009170611'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.debug.ui.memory.search' version='1.2.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='57575'/>
+        <property name='download.size' value='57575'/>
+        <property name='download.md5' value='0e8ece91fc8df4be86f6477662d98b99'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.debug.ui.memory.search_1.2.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.debug.ui.memory.search_1.2.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.doc.user' version='5.1.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='11991607'/>
+        <property name='download.size' value='11991607'/>
+        <property name='download.md5' value='3b904837ea4a9c24e65ebdc62e6fe3d7'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.doc.user_5.1.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.doc.user_5.1.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.make.core' version='7.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='412138'/>
+        <property name='download.size' value='412138'/>
+        <property name='download.md5' value='f522160885102f4ec4a144bab4163402'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.make.core_7.0.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.make.core_7.0.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.cdt.platform' version='7.0.1.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/features/org.eclipse.cdt.platform_7.0.1.201009170611/'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\features\org.eclipse.cdt.platform_7.0.1.201009170611'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.debug.core' version='7.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='488574'/>
+        <property name='download.size' value='488574'/>
+        <property name='download.md5' value='93ad48c5f76a84fdb9578b7e52be386a'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.debug.core_7.0.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.debug.core_7.0.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.debug.mi.core' version='7.0.1.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='539160'/>
+        <property name='download.size' value='539160'/>
+        <property name='download.md5' value='5553f745ef273404c73ebb10225d265c'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.debug.mi.core_7.0.1.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.debug.mi.core_7.0.1.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.core' version='5.2.1.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='4335075'/>
+        <property name='download.size' value='4335075'/>
+        <property name='download.md5' value='b710ab9e5eefd154b0ec12fd57cf92f2'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.core_5.2.1.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.core_5.2.1.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt' version='7.0.1.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='77517'/>
+        <property name='download.size' value='77517'/>
+        <property name='download.md5' value='d920a3a1d096e0fa96d8a7d5801ac13f'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt_7.0.1.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt_7.0.1.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.make.ui' version='7.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='445629'/>
+        <property name='download.size' value='445629'/>
+        <property name='download.md5' value='f64da6f6bdae9b684f03f53b0e39f64e'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.make.ui_7.0.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.make.ui_7.0.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.gdb.ui' version='7.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='8279'/>
+        <property name='download.size' value='8279'/>
+        <property name='download.md5' value='0ce87bf033b9c2df7b1e7ca87c43620f'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.gdb.ui_7.0.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.gdb.ui_7.0.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.debug.ui' version='7.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='988685'/>
+        <property name='download.size' value='988685'/>
+        <property name='download.md5' value='3156560cc364be3d60a844808546d4bc'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.debug.ui_7.0.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.debug.ui_7.0.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.dsf.ui' version='2.1.1.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='1207142'/>
+        <property name='download.size' value='1207142'/>
+        <property name='download.md5' value='36e91c113ee58296c228387dd79a2666'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.dsf.ui_2.1.1.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.dsf.ui_2.1.1.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.ui' version='5.2.1.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='4944134'/>
+        <property name='download.size' value='4944134'/>
+        <property name='download.md5' value='493029a04bcc2fd04df639378d9b90c8'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.ui_5.2.1.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.ui_5.2.1.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.dsf.gdb.ui' version='2.1.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='407593'/>
+        <property name='download.size' value='407593'/>
+        <property name='download.md5' value='99950dc74f071231a22b83c9dda5646a'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.dsf.gdb.ui_2.1.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.dsf.gdb.ui_2.1.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.launch' version='6.1.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='218107'/>
+        <property name='download.size' value='218107'/>
+        <property name='download.md5' value='c3a228ebf4a8de491cc99c71b0db010f'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.launch_6.1.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.launch_6.1.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.cdt.gnu.debug' version='7.0.1.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/features/org.eclipse.cdt.gnu.debug_7.0.1.201009170611/'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\features\org.eclipse.cdt.gnu.debug_7.0.1.201009170611'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.cdt.gnu.dsf' version='2.1.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/features/org.eclipse.cdt.gnu.dsf_2.1.0.201009170611/'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\features\org.eclipse.cdt.gnu.dsf_2.1.0.201009170611'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.cdt.gdb' version='7.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/features/org.eclipse.cdt.gdb_7.0.0.201009170611/'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\features\org.eclipse.cdt.gdb_7.0.0.201009170611'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.debug.ui.memory.transport' version='2.1.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='110218'/>
+        <property name='download.size' value='110218'/>
+        <property name='download.md5' value='8728fc6bc1c54446179adee2343f0616'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.debug.ui.memory.transport_2.1.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.debug.ui.memory.transport_2.1.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.p2' version='1.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='22000'/>
+        <property name='download.size' value='22000'/>
+        <property name='download.md5' value='dd62fa88ed295c92fa185f3b747a1e8a'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.p2_1.0.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.p2_1.0.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.debug.ui.memory.memorybrowser' version='1.2.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='50737'/>
+        <property name='download.size' value='50737'/>
+        <property name='download.md5' value='c440eb49e2ea349a6275bb037df49749'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.debug.ui.memory.memorybrowser_1.2.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.debug.ui.memory.memorybrowser_1.2.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.cdt.gnu.build' version='7.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/features/org.eclipse.cdt.gnu.build_7.0.0.201009170611/'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\features\org.eclipse.cdt.gnu.build_7.0.0.201009170611'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.dsf.gdb' version='3.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='1099370'/>
+        <property name='download.size' value='1099370'/>
+        <property name='download.md5' value='83871e74c3b3f241b6093275f2008d90'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.dsf.gdb_3.0.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.dsf.gdb_3.0.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.cdt.p2' version='1.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/features/org.eclipse.cdt.p2_1.0.0.201009170611/'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\features\org.eclipse.cdt.p2_1.0.0.201009170611'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.cdt' version='7.0.1.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/features/org.eclipse.cdt_7.0.1.201009170611/'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\features\org.eclipse.cdt_7.0.1.201009170611'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.managedbuilder.ui' version='7.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='399612'/>
+        <property name='download.size' value='399612'/>
+        <property name='download.md5' value='1f45052122b5a50477c51c41916de98c'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.managedbuilder.ui_7.0.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.managedbuilder.ui_7.0.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.gdb' version='7.0.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='14351'/>
+        <property name='download.size' value='14351'/>
+        <property name='download.md5' value='f8b4430311e4a3f764af7f584cef41d3'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.gdb_7.0.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.gdb_7.0.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.debug.mi.ui' version='6.1.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='149249'/>
+        <property name='download.size' value='149249'/>
+        <property name='download.md5' value='dfcbb8f78afb633f26c4ecd6db607b2a'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.debug.mi.ui_6.1.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.debug.mi.ui_6.1.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.cdt.dsf' version='2.1.0.201009170611'>
+      <properties size='3'>
+        <property name='artifact.size' value='274165'/>
+        <property name='download.size' value='274165'/>
+        <property name='download.md5' value='ea3bc3bcdaf8a841b2807cbe54e49d12'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/plugins/org.eclipse.cdt.dsf_2.1.0.201009170611.jar'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\plugins\org.eclipse.cdt.dsf_2.1.0.201009170611.jar'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

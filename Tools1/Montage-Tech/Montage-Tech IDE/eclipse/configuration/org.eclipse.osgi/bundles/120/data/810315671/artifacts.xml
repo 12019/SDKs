@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\dropins\eclipse' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1359131114518'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='2'>
+    <artifact classifier='osgi.bundle' id='com.montage_tech.arthas.application' version='1.0.0.qualifier'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/dropins/eclipse/plugins/com.montage-tech.arthas.application/'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\dropins\eclipse\plugins\com.montage-tech.arthas.application'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.montage-tech.arthas.library' version='1.0.0.qualifier'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/dropins/eclipse/plugins/com.montage-tech.arthas.library/'/>
+        <property name='file.name' value='C:\Program Files\Montage-Tech\Montage-Tech IDE\eclipse\dropins\eclipse\plugins\com.montage-tech.arthas.library'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

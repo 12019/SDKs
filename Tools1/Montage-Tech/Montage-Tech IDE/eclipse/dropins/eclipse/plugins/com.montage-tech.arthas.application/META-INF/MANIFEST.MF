@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Toolchain
+Bundle-SymbolicName: com.montage_tech.arthas.application;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: com.montage-tech.arthas.toolchain
+Bundle-Vendor: MONTAGE_TECH
+Require-Bundle: org.eclipse.core.contenttype;bundle-version="3.4.100",
+ org.eclipse.cdt.managedbuilder.core;bundle-version="7.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

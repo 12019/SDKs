@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="com.montage-tech.arthas.library"
+         name="arthas.library"
+         point="org.eclipse.cdt.managedbuilder.core.buildDefinitions">
+      <projectType
+            buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib"
+            id="arthas.library.projecttype"
+            isAbstract="false"
+            isTest="false"
+            name="Montage-tech Library">
+         <configuration
+               artifactExtension="a"
+               buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib"
+               buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release"
+               cleanCommand="rm -rf"
+               errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser;"
+               id="arthas.lib.release"
+               name="lib.release">
+            <toolChain
+                  archList="all"
+                  id="arthas.library.library"
+                  isAbstract="false"
+                  name="montage-tech lib toolchain"
+                  osList="win32"
+                  supportsManagedBuild="true"
+                  targetTool="arthas.library.archiver">
+               <builder
+                     autoBuildTarget="-s all"
+                     buildfileGenerator="org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator"
+                     cleanBuildTarget="-s clean"
+                     command="make"
+                     errorParsers="org.eclipse.cdt.core.MakeErrorParser"
+                     id="arthas.library.builder"
+                     ignoreErrCmd="-k"
+                     incrementalBuildTarget="-s all"
+                     isAbstract="false"
+                     isVariableCaseSensitive="false"
+                     name="builder"
+                     parallelBuildCmd="-j*"
+                     reservedMacroNames="ROOT,DEPS,OBJS,.*_SRCS,EXECUTABLES,SUBDIRS,LIBS,USER_OBJS,.*_INPUTS,.*_OUTPUTS"
+                     variableFormat="${=}">
+               </builder>
+               <targetPlatform
+                     archList="all"
+                     binaryParser="org.eclipse.cdt.core.ELF"
+                     id="arthas.library.targetPlatform"
+                     isAbstract="false"
+                     name="targetPlatform"
+                     osList="win32">
+               </targetPlatform>
+               <tool
+                     command="mips-elf-gcc.exe "
+                     id="arthas.library.compiler"
+                     isAbstract="false"
+                     name="c compiler"
+                     natureFilter="cnature"
+                     outputFlag="-c -o">
+                  <inputType
+                        dependencyCalculator="org.eclipse.cdt.managedbuilder.makegen.gnu.DefaultGCCDependencyCalculator2"
+                        dependencyContentType="org.eclipse.cdt.core.cHeader"
+                        id="arthas.library.compiler.inputType"
+                        name="Compiler Input: c"
+                        primaryInput="true"
+                        sourceContentType="org.eclipse.cdt.core.cSource"
+                        sources="c">
+                  </inputType>
+                  <outputType
+                        buildVariable="OBJS"
+                        id="arthas.library.compiler.outputType"
+                        name="Compiler Output"
+                        outputs="o"
+                        primaryOutput="true">
+                  </outputType>
+                  <optionCategory
+                        id="arthas.library.compiler.optionCategory.general"
+                        name="general">
+                  </optionCategory>
+                  <option
+                        category="arthas.library.compiler.optionCategory.general"
+                        id="arthas.library.compiler.general.options"
+                        isAbstract="false"
+                        name="Compile Options"
+                        resourceFilter="all"
+                        value="-Os -G0 -EL -mips1 -Wa,-xgot -nostartfiles -nodefaultlibs -Wall -Wno-pointer-sign  -Werror -msoft-float -ffunction-sections"
+                        valueType="string">
+                  </option>
+                  <option
+                        browseType="directory"
+                        category="arthas.library.compiler.optionCategory.general"
+                        command="-I"
+                        id="arthas.library.compiler.general.incpath"
+                        isAbstract="false"
+                        name="Include Paths"
+                        resourceFilter="all"
+                        valueType="includePath">
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\ap&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\drv&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\drv\bus&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\drv\drvbase&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\hal&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\mdl&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\os&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\util&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\hal\arch\mips&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\mdl\mmi&quot;">
+                     </listOptionValue>
+                  </option>
+                  <option
+                        browseType="none"
+                        category="arthas.library.compiler.optionCategory.general"
+                        command="-D"
+                        id="arthas.library.compiler.general.defsym"
+                        isAbstract="false"
+                        name="Defined Symbols"
+                        resourceFilter="all"
+                        valueType="definedSymbols">
+                     <listOptionValue
+                           builtIn="false"
+                           value="METHOD0=0">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="METHODS=1">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="CACHE_ON">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="OPTIMIZE=METHODS">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="ASSERT_ON">
+                     </listOptionValue>
+                  </option>
+               </tool>
+               <tool
+                     command="mips-elf-g++.exe "
+                     id="arthas.library.compiler.cpp"
+                     isAbstract="false"
+                     name="c++ compiler"
+                     natureFilter="both"
+                     outputFlag="-c -o">
+                  <inputType
+                        dependencyCalculator="org.eclipse.cdt.managedbuilder.makegen.gnu.DefaultGCCDependencyCalculator2"
+                        dependencyContentType="org.eclipse.cdt.core.cHeader"
+                        id="arthas.library.compiler.cpp.inputType"
+                        name="Compiler Input: c++"
+                        primaryInput="false"
+                        sourceContentType="org.eclipse.cdt.core.cxxSource"
+                        sources="cpp">
+                  </inputType>
+                  <outputType
+                        buildVariable="OBJS"
+                        id="arthas.library.compiler.cpp.outputType"
+                        name="Compiler Output"
+                        outputs="o"
+                        primaryOutput="true">
+                  </outputType>
+                  <optionCategory
+                        id="arthas.library.compiler.cpp.optionCategory.general"
+                        name="general">
+                  </optionCategory>
+                  <option
+                        category="arthas.library.compiler.cpp.optionCategory.general"
+                        id="arthas.library.compiler.cpp.general.options"
+                        isAbstract="false"
+                        name="Compile Options"
+                        resourceFilter="all"
+                        value="-Os -G0 -EL -mips1 -Wa,-xgot -nostartfiles -nodefaultlibs -Wall   -Werror -msoft-float -ffunction-sections"
+                        valueType="string">
+                  </option>
+                  <option
+                        browseType="directory"
+                        category="arthas.library.compiler.cpp.optionCategory.general"
+                        command="-I"
+                        id="arthas.library.compiler.cpp.general.incpath"
+                        isAbstract="false"
+                        name="Include Paths"
+                        resourceFilter="all"
+                        valueType="includePath">
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\ap&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\drv&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\drv\bus&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\drv\drvbase&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\hal&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\mdl&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\os&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\util&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\hal\arch\mips&quot;">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="&quot;${PROJECT_LOC}\inc\mdl\mmi&quot;">
+                     </listOptionValue>
+                  </option>
+                  <option
+                        browseType="none"
+                        category="arthas.library.compiler.cpp.optionCategory.general"
+                        command="-D"
+                        id="arthas.library.compiler.cpp.general.defsym"
+                        isAbstract="false"
+                        name="Defined Symbols"
+                        resourceFilter="all"
+                        valueType="definedSymbols">
+                     <listOptionValue
+                           builtIn="false"
+                           value="METHOD0=0">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="METHODS=1">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="CACHE_ON">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="OPTIMIZE=METHODS">
+                     </listOptionValue>
+                     <listOptionValue
+                           builtIn="false"
+                           value="ASSERT_ON">
+                     </listOptionValue>
+                  </option>
+               </tool>
+               <tool
+                     command="mips-elf-gcc.exe"
+                     errorParsers="org.eclipse.cdt.core.GASErrorParser"
+                     id="arthas.library.assembler"
+                     isAbstract="false"
+                     name="assembler"
+                     outputFlag="-o">
+                  <optionCategory
+                        id="arthas.library.assembler.optionCategory.general"
+                        name="general">
+                  </optionCategory>
+                  <option
+                        category="arthas.library.assembler.optionCategory.general"
+                        id="arthas.library.asopt"
+                        isAbstract="false"
+                        name="Assembler flags"
+                        resourceFilter="all"
+                        value="-EL -mips1 -c"
+                        valueType="string">
+                  </option>
+                  <inputType
+                        dependencyCalculator="org.eclipse.cdt.managedbuilder.makegen.gnu.DefaultGCCDependencyCalculator2"
+                        id="arthas.library.inputType"
+                        name="Assembler Input"
+                        primaryInput="true"
+                        sources="s,S">
+                  </inputType>
+                  <outputType
+                        buildVariable="OBJS"
+                        id="arthas.library.outputType"
+                        name="Assembler Output"
+                        outputs="o"
+                        primaryOutput="true">
+                  </outputType>
+                  <option
+                        browseType="directory"
+                        category="arthas.library.assembler.optionCategory.general"
+                        command="-I"
+                        id="arthas.library.assembler.general.incpath"
+                        isAbstract="false"
+                        name="Include Paths"
+                        resourceFilter="all"
+                        valueType="includePath">
+                  </option>
+                  <option
+                        browseType="none"
+                        category="arthas.library.assembler.optionCategory.general"
+                        command="-D"
+                        id="arthas.library.assembler.general.defsym"
+                        isAbstract="false"
+                        name="Defined Symbols"
+                        resourceFilter="all"
+                        valueType="definedSymbols">
+                  </option>
+               </tool>
+               <tool
+                     command="mips-elf-ar.exe"
+                     id="arthas.library.archiver"
+                     isAbstract="false"
+                     name="archiver"                     
+                     superClass="cdt.managedbuild.tool.gnu.archiver.base">
+                  <optionCategory
+                        id="arthas.library.archiver.optionCategory.general"
+                        name="general">
+                  </optionCategory>
+                  <option
+                        category="arthas.library.archiver.optionCategory.general"
+                        id="arthas.library.aropt"
+                        isAbstract="false"
+                        name="Archiver Options"
+                        resourceFilter="all"
+                        valueType="string">
+                  </option>
+               </tool>
+               <tool
+                     command="mips-elf-gcc.exe"
+                     errorParsers="org.eclipse.cdt.core.GASErrorParser"
+                     id="arthas.library.spec.compiler"
+                     isAbstract="false"
+                     name="special compiler"
+                     outputFlag="-c -o">
+                  <inputType
+                        dependencyCalculator="org.eclipse.cdt.managedbuilder.makegen.gnu.DefaultGCCDependencyCalculator2"
+                        id="arthas.library.spec.compiler.inputType"
+                        name="Special Input"
+                        sources="s,S">
+                  </inputType>
+                  <outputType
+                        buildVariable="OBJS"
+                        id="arthas.library.spec.compiler.outputType"
+                        name="Special Output"
+                        outputs="o"
+                        primaryOutput="true">
+                  </outputType>
+                  <optionCategory
+                        id="arthas.library.spec.compiler.optionCategory"
+                        name="general">
+                  </optionCategory>
+                  <option
+                        category="arthas.library.spec.compiler.optionCategory"
+                        id="com.montage-tech.arthas.library.option3"
+                        isAbstract="false"
+                        name="Special Options"
+                        resourceFilter="all"
+                        value="-mips32 -O0 -EL -nostartfiles -nodefaultlibs -Wall"
+                        valueType="string">
+                  </option>
+                  <option
+                        browseType="directory"
+                        category="arthas.library.spec.compiler.optionCategory"
+                        command="-I"
+                        id="arthas.library.spec.compiler.incpath"
+                        isAbstract="false"
+                        name="Include Paths"
+                        resourceFilter="all"
+                        valueType="includePath">
+                  </option>
+                  <option
+                        browseType="none"
+                        category="arthas.library.spec.compiler.optionCategory"
+                        command="-D"
+                        id="arthas.library.spec.compiler.defsym"
+                        isAbstract="false"
+                        name="Defined Symbols"
+                        resourceFilter="all"
+                        valueType="definedSymbols">
+                  </option>
+               </tool>
+            </toolChain>
+         </configuration>
+      </projectType>
+   </extension>
+
+</plugin>

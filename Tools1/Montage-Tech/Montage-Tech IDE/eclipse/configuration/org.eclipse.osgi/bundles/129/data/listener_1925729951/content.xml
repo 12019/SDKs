@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='metadata listener dropins' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+  <properties size='3'>
+    <property name='p2.system' value='true'/>
+    <property name='p2.timestamp' value='1359131114550'/>
+    <property name='dropin.metadataRepositories' value='file:/C:/Program%20Files/Montage-Tech/Montage-Tech%20IDE/eclipse/dropins/eclipse/'/>
+  </properties>
+</repository>
